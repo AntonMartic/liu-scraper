@@ -1,5 +1,7 @@
 # Liu-scraper
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 **Liu-scraper** is a lightweight web scraper for collecting program and course information from [Linköping University's study information website](https://studieinfo.liu.se/). It uses the [Web Scraper](https://webscraper.io/) Chrome extension to extract data and Python scripts to convert and process the scraped data into structured JSON format.
 
 ---
@@ -31,6 +33,8 @@ Install BeautifulSoup using pip:
 pip install beautifulsoup4
 ```
 
+---
+
 ## 📁 Folder Structure
 
 Liu-scraper/
@@ -44,35 +48,45 @@ Liu-scraper/
 ├── README.md
 └── LICENSE
 
+---
+
 ## 🔧 How to Use
 
-Load the Sitemap in Web Scraper
+### 1. Load the Sitemap in Web Scraper
 
-Open the Chrome extension Web Scraper.
+- Open the Chrome extension Web Scraper.
+- Import the sitemap from `sitemaps/sitemap.txt` or `sitemap.js`.
+- Edit the `startUrl` in the sitemap to target the program or course you want to scrape.
 
-Import the sitemap from sitemaps/sitemap.txt or sitemap.js.
+### 2. Scrape the Website
 
-Edit the startUrl in the sitemap to target the program or course you want to scrape.
+- Start the scraping job in the Web Scraper tool.
+- Once complete, download the resulting CSV file.
 
-Scrape the Website
+### 3. Convert CSV to JSON
 
-Start the scraping job in the Web Scraper tool.
+- Place the CSV in the appropriate folder.
+- Run the Python conversion script:
 
-Once complete, download the resulting CSV file.
-
-Convert CSV to JSON
-
-Place the CSV in the appropriate folder.
-
-Run the Python conversion script:
-
-bash
-Kopiera
-Redigera
+```bash
 python scripts/csvtojson-programs.py
-The output JSON will be saved in the jsons/ folder.
+```
+- The output JSON will be saved in the jsons/ folder.
 
-Use the JSON Output
+### 4. Use the JSON Output
 
-The structured JSON file can be used in websites, applications, or for further data processing.
+- The structured JSON file can be used in websites, applications, or for further data processing.
 
+---
+
+## 📌 Notes
+
+- Designed for small-scale academic scraping projects.
+- The miscellaneous folder contains helper scripts for refining or transforming specific CSV fields.
+- Please use responsibly and respect the website’s terms of service.
+
+---
+
+## 🧑‍💻 Author
+
+Created by Anton — a student project to streamline data extraction from LiU’s course information system.
