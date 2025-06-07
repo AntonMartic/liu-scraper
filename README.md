@@ -40,21 +40,13 @@ pip install beautifulsoup4
 Liu-scraper/
 
 ├── sitemaps/
-
-│   └── sitemap.txt / sitemap.js         # Web Scraper sitemap file
-
+│     └── sitemap.txt / sitemap.js         # Web Scraper sitemap file
 ├── scripts/
-
-│   ├── csvtojson-programs.py            # Converts CSV to JSON
-
-│   └── miscellaneous/                   # Other processing scripts
-
+│     ├── csvtojson-programs.py            # Converts CSV to JSON
+│     └── miscellaneous/                   # Other processing scripts
 ├── jsons/
-
-│   └── example.json                     # Sample JSON output
-
+│     └── example.json                     # Sample JSON output
 ├── README.md
-
 └── LICENSE
 
 ---
