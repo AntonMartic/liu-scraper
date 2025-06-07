@@ -29,3 +29,50 @@ Install BeautifulSoup using pip:
 
 ```bash
 pip install beautifulsoup4
+```
+
+## 📁 Folder Structure
+
+Liu-scraper/
+├── sitemaps/
+│   └── sitemap.txt / sitemap.js         # Web Scraper sitemap file
+├── scripts/
+│   ├── csvtojson-programs.py            # Converts CSV to JSON
+│   └── miscellaneous/                   # Other processing scripts
+├── jsons/
+│   └── example.json                     # Sample JSON output
+├── README.md
+└── LICENSE
+
+## 🔧 How to Use
+
+Load the Sitemap in Web Scraper
+
+Open the Chrome extension Web Scraper.
+
+Import the sitemap from sitemaps/sitemap.txt or sitemap.js.
+
+Edit the startUrl in the sitemap to target the program or course you want to scrape.
+
+Scrape the Website
+
+Start the scraping job in the Web Scraper tool.
+
+Once complete, download the resulting CSV file.
+
+Convert CSV to JSON
+
+Place the CSV in the appropriate folder.
+
+Run the Python conversion script:
+
+bash
+Kopiera
+Redigera
+python scripts/csvtojson-programs.py
+The output JSON will be saved in the jsons/ folder.
+
+Use the JSON Output
+
+The structured JSON file can be used in websites, applications, or for further data processing.
+
